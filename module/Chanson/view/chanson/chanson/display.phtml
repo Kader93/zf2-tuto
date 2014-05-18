@@ -1,0 +1,25 @@
+<?php
+
+$title = "songs";
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+
+<table class="table">
+    <tr>
+        <th>Title</th>
+        <th>&nbsp;</th>
+    </tr>
+    <?php foreach ($chanson as $chansons) : ?>
+        <tr>
+            <td><?php echo $this->escapeHtml($chansons['id']);?></td>
+            <td><?php echo $this->escapeHtml($chansons['titre']);?></td>
+
+        </tr>
+    <?php endforeach; ?>
+</table>
+    <a href="<?php echo $this->url('chanson',
+        array('action'=>'add', 'id' => $id_album));?>"><span class="glyphicon glyphicon-plus"></span> Add songs </a>
+    <br>
+    <a href="<?php echo $this->url('chanson',
+        array('action'=>'index'));?>"><span class="glyphicon glyphicon-th-list"></span> My Albums </a>

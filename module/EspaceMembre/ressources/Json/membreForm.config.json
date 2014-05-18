@@ -1,0 +1,12 @@
+[
+ {"name":"pseudo","type":"text","options":{"label":"Pseudonyme"}},
+ {"name":"mdp","type":"password","options":{"label":"Password"}},
+ {"name":"mdpconfirm","type":"password","options":{"label":"Confirm Password"}},
+ {"name":"mail","type":"Email","options":{"label":"Email"}},
+ {"name":"sexe","type":"Radio","options":{"label":"Sexe","value_options":["Homme","Femme"]}},
+ {"name":"famille","type":"MultiCheckbox","options":{"label":"Situation familiale","value_options":["Celibataire","Marie"]}},
+ {"name":"description","type":"textarea","options":{"label":"Description a ajouter"}},
+ {"name":"pays","type":"Select","options":{"label":"Selection Pays","value_options":["France","Allemagne","Italie"]}},
+ {"name":"age","type":"text","options":{"label":"Age"}},
+ {"name":"submit","attributes":{"type":"submit","value":"Go","id":"submitbutton"}}
+]
